@@ -35,8 +35,8 @@ export function loadImageFile(file: File): Promise<{ img: HTMLImageElement; cvW:
 
       sharedImage = img;
       sharedScale = imgScale;
-      sharedCanvasW = cvW;
-      sharedCanvasH = cvH;
+     // sharedCanvasW = cvW;
+      //sharedCanvasH = cvH;
 
       URL.revokeObjectURL(url);
       resolve({ img, cvW, cvH, scale: imgScale });
