@@ -19,8 +19,8 @@ interface DragState {
 // Singleton state to share image data between hook instances
 let sharedImage: HTMLImageElement | null = null;
 let sharedScale = 1;
-let sharedCanvasW = 0;
-let sharedCanvasH = 0;
+//let sharedCanvasW = 0;
+//let sharedCanvasH = 0;
 
 export function loadImageFile(file: File): Promise<{ img: HTMLImageElement; cvW: number; cvH: number; scale: number }> {
   return new Promise((resolve) => {
